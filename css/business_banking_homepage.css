@@ -1,0 +1,292 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.0;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: #e8491d 5px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brand {
+    float: left;
+}
+
+header #brand h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+    padding-left: 5rem;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#newsletter {
+    background: url('../img/image3.jpg') no-repeat;
+    text-align: left;
+    border-bottom: #e8491d 5px solid;
+}
+
+#newsletter h2 {
+    font-size: 40px;
+    color: aliceblue;
+    padding-top: 15px;
+}
+
+#newsletter h1 {
+    font-size: 70px;
+    color: aliceblue;
+}
+
+#newsletter h4 {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+#topic {
+    background: white;
+}
+
+#topic h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#content1 h1 {
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+
+#content1 h3 {
+    font-size: 40px;
+    text-align: left;
+}
+
+#content1 p {
+    font-family: tahoma;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#boxes .imageBox {
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+#boxes .imageBox img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+#boxes .imageBox h1 {
+    color: darkblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#boxes .imageBox p {
+    font-family: tahoma;
+    font-size: 16px;
+    text-align: center;
+}
+
+#boxes .imageBox a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#topic2 {
+    background: white;
+}
+
+#topic2 h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#content2 h1 {
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+    padding-left: 290px;
+    font-family: sans-serif;
+}
+
+#content2 h3 {
+    font-size: 35px;
+    text-align: left;
+    padding-left: 420px;
+    font-family: sans-serif;
+}
+
+#content2 img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-top: -300px;
+    float: left;
+}
+
+#content2 p {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 420px;
+    font-family: tahoma;
+    line-height: 1.5;
+}
+
+#content2 a {
+    font-size: 25px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#topic3 {
+    background: white;
+}
+
+#topic3 h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#content3 h1 {
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+
+#content3 h3 {
+    font-size: 40px;
+    text-align: left;
+}
+
+#content3 p {
+    font-family: tahoma;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#boxes2 .imageBox2 {
+    float: left;
+    text-align: center;
+    padding: 18px;
+}
+
+#boxes2 .imageBox2 img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+#boxes2 .imageBox2 h1 {
+    color: darkblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#boxes2 .imageBox2 p {
+    font-family: tahoma;
+    font-size: 16px;
+    text-align: center;
+}
+
+#boxes2 .imageBox2 a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#content4 {
+    background: darkblue;
+    margin-top: 50px;
+}
+
+#content4 h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#content4 p {
+    text-align: center;
+    font-family: tahoma;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+footer {
+    background-color: #35424a;
+}
+
+footer img {
+    width: auto;
+    padding: 5px;
+}
+
+footer h1 {
+    color: aliceblue;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.footerList {
+    font-family: tahoma;
+    line-height: 2.5;
+    color: aliceblue;
+}
+
+footer p {
+    color: aliceblue;
+    font-family: tahoma;
+}

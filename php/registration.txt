@@ -1,0 +1,166 @@
+<!doctype html>
+
+<?php
+$servername = "localhost";
+$username="root";
+$password="";
+$dbname="login";
+
+try{
+$conn = mysqli_connect($servername,$username,$password,$dbname);
+echo("successful in connection");
+}catch(MySQLi_Sql_Exception $ex){
+echo("error in connection");
+}
+if(isset($_POST['submit'])){
+$fname=$_POST['fname'];
+$lname=$_POST['lname'];
+$accountNumber=$_POST['accountNumber'];
+$address=$_POST['address'];
+$gender=$_POST['gender'];
+$phone = $_POST['phone'];
+$email=$_POST['email'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+$register_query = "INSERT INTO `user`(`fname`,`lname`,`accountNumber`,`address`,`gender`,`phone`,`email`,`username`,`password`) VALUES ('$fname','$lname','$accountNumber','$address','$gender','$phone','$email','$username','$password')";
+
+try{
+$register_result = mysqli_query($conn, $register_query);
+if($register_result){
+if(mysqli_affected_rows($conn)>0){
+echo("registration successful");
+}else{
+echo("error in registration");
+}
+ 
+}
+}catch(Exception $ex){
+echo("error".$ex->getMessage());
+}
+}
+ 
+?>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Enroll | S.L. Bank Online Banking</title>
+</head>
+ 
+<body>
+
+<div class="container">
+       <div class="header">
+           <h2>Enroll if you are not...</h2>
+        </div>
+    </div>
+<form action="registration_new.php" method="post">
+    <table align="center">
+        <tr>
+        <td>Name :</td>
+        <td><input type="text" name="fname" placeholder="Enter Your First Name" required></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td><input type="text" name="lname" placeholder="Enter Your Last Name"></td>
+        </tr>
+        <tr>
+        <td>Account Number :</td>
+        <td><input type="text" name="accountNumber" placeholder="Enter Your Account Number" required></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>Address :</td>
+        <td><input type="text" name="address" placeholder="Enter Your Address" required></td>
+        </tr>
+        <tr>
+        <td>Gender :</td>
+        <td><input type="radio" name="gender" value="Male">Male</td>
+        </tr>
+        <tr>
+        <td></td>
+        <td><input type="radio" name="gender" value="female">Female</td>
+        </tr>
+        <tr>
+        <td></td>
+        <td><input type="radio" name="gender" value="others">others</td>
+        </tr>
+        <tr>
+        <td>Phone :</td>
+        <td><input type="tel" name="phone" placeholder="Enter Your Phone Number" required></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+
+        <tr>
+        <td>Email :</td>
+        <td><input type="email" name="email" placeholder="example@example.com" required></td>
+
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+
+        <tr>
+        <td>Username :</td>
+        <td><input type="text" name="username" placeholder="Enter Your Username" required></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+
+        <tr>
+        <td>Password :</td>
+        <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+
+        <tr>
+        <td></td>
+        <td><input type="submit" name="submit" value="SignUp"></td>
+        </tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f4f4f4;
+}
+
+.imageBox {
+    min-height: 500px;
+    background: url('../img/twitter_header_photo_1.png') no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.mainContainer {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.enrollmentInformation h1 {
+    font-size: 50px;
+    color: darkblue;
+    text-align: left;
+}
+
+.enrollmentInformation {
+    text-align: left;
+    font-family: tahoma;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 500px;
+}
+
+.mainHeader {
+    position: absolute;
+    top: 155%;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.mainHeader h2 {
+    color: aliceblue;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.mainHeader .inputBox {
+    position: relative;
+}
+
+.mainHeader .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.mainHeader .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.mainHeader .inputBox input:focus ~ label,
+.mainHeader .inputBox input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.mainHeader input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mainHeader p {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.mainHeader a {
+    padding-left: 10px;
+    color: aliceblue;
+}
+
+footer {
+    background-color: #35424a;
+}
+
+footer img {
+    width: auto;
+    padding: 5px;
+}
+
+footer h1 {
+    color: aliceblue;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.footerList p {
+    font-family: tahoma;
+    color: aliceblue;
+}
+
+footer p {
+    color: aliceblue;
+    font-family: tahoma;
+}

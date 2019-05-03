@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.0;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: #e8491d 5px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brand {
+    float: left;
+}
+
+header #brand h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+    padding-left: 5rem;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#newsletter {
+    background: url('../img/image1234.jpg') no-repeat;
+    background-repeat: no-repeat;
+    text-align: left;
+    border-bottom: #e8491d 5px solid;
+}
+
+#newsletter h4 {
+    font-size: 30px;
+    color: aliceblue;
+    padding-top: 15px;
+}
+
+#newsletter h1 {
+    font-size: 60px;
+    color: aliceblue;
+}
+
+#newsletter a {
+    float: left;
+    clear: left;
+    font-size: 30px;
+    color: aliceblue;
+    padding-bottom: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#newsletter a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase h1 {
+    letter-spacing: 0.5rem;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#showcase p {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#showcase1 h1 {
+    letter-spacing: 0.1rem;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkblue;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#showcase1 {
+    background: white;
+}
+
+#boxes {
+    background: white;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 15%;
+    padding: 25px;
+}
+
+#boxes a {
+    font-family: tahoma;
+    font-size: 18px;
+    line-height: auto;
+}
+
+#showcase9 {
+    background: darkblue;
+}
+
+#showcase9 h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#showcase9 p {
+    text-align: center;
+    font-family: tahoma;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+footer {
+    background-color: #35424a;
+}
+
+footer img {
+    width: auto;
+    padding: 5px;
+}
+
+footer h1 {
+    color: aliceblue;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.footerList {
+    font-family: tahoma;
+    line-height: 2.5;
+    color: aliceblue;
+}
+
+footer p {
+    color: aliceblue;
+    font-family: tahoma;
+}

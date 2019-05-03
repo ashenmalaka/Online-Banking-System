@@ -1,0 +1,415 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.0;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: #e8491d 5px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brand {
+    float: left;
+}
+
+header #brand h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+    padding-left: 5rem;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#newsletter {
+    background: url('../img/image2.jpg') no-repeat;
+    background-repeat: no-repeat;
+    text-align: left;
+    border-bottom: #e8491d 5px solid;
+}
+
+#newsletter h4 {
+    font-size: 30px;
+    color: aliceblue;
+    padding-top: 15px;
+}
+
+#newsletter h1 {
+    font-size: 70px;
+    color: aliceblue;
+}
+
+#newsletter a {
+    float: left;
+    clear: left;
+    font-size: 30px;
+    color: aliceblue;
+    line-height: 45px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#newsletter a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase h1 {
+    letter-spacing: 0.5rem;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#showcase p {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#showcase1 h1 {
+    letter-spacing: 0.1rem;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkblue;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#showcase1 {
+    background: white;
+}
+
+#boxes {
+    background: white;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 15%;
+    padding: 25px;
+}
+
+#boxes a {
+    font-family: tahoma;
+    font-size: 18px;
+    line-height: auto;
+}
+
+#showcase2 h1 {
+    letter-spacing: 0.2rem;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkblue;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#showcase3 {
+    background: white;
+}
+
+#showcase3 img {
+    margin-top: -50px;
+    float: right;
+    width: 350px;
+    height: 300px;
+}
+
+#showcase3 h1 {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+#showcase3 h2 {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: darkblue;
+}
+
+.list {
+    padding-top: 10px;
+    text-align: left;
+    font-family: tahoma;
+    font-size: 18px;
+}
+
+#showcase4 img {
+    margin-top: -170px;
+    float: left;
+    width: 350px;
+    height: 350px;
+}
+
+#showcase4 h1 {
+    padding-left: 420px;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 50px
+}
+
+#showcase4 h2 {
+    text-align: left;
+    padding-left: 420px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: darkblue;
+}
+
+.billList {
+    padding-top: 5px;
+    text-align: left;
+    padding-left: 430px;
+    font-family: tahoma;
+    font-size: 18px;
+}
+
+#showcase4 a {
+    padding-left: 420px;
+    font-size: 25px;
+}
+
+#showcase4 h2 a {
+    padding-left: 10px;
+}
+
+#showcase5 {
+    background: white;
+    margin-top: 30px;
+}
+
+#showcase5 img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    float: right;
+    margin-top: -160px;
+}
+
+#showcase5 h1 {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 50px
+}
+
+#showcase5 h2 {
+    text-align: left;
+    padding-right: 350px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: darkblue;
+}
+
+.content {
+    padding-top: 5px;
+    text-align: left;
+    font-family: tahoma;
+    font-size: 18px;
+}
+
+#showcase6 {
+    margin-top: 20px;
+}
+
+#showcase6 img {
+    border-radius: 50%;
+    width: 380px;
+    height: 350px;
+    float: left;
+    margin-top: -150px;
+}
+
+#showcase6 h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    padding-right: 80px;
+}
+
+#showcase6 h2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-left: 175px;
+    color: darkblue;
+}
+
+#showcase6 p {
+    padding-left: 420px;
+    text-align: left;
+    font-family: tahoma;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.linkSecure a {
+    font-size: 25px;
+    padding-left: 40px;
+}
+
+#showcase7 {
+    background: white;
+    margin-top: 30px;
+}
+
+#showcase7 img {
+    width: 350px;
+    height: 350px;
+    float: right;
+    margin-top: -200px;
+}
+
+#showcase7 h1 {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 50px;
+    padding-right: 80px;
+}
+
+#showcase7 h2 {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-right: 400px;
+    color: darkblue;
+}
+
+#showcase7 a {
+    float: left;
+    clear: left;
+    line-height: 80px;
+    font-size: 40px;
+}
+
+#showcase8 {
+    margin-top: 30px;
+}
+
+#showcase8 h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: left;
+    padding-left: 410px;
+}
+
+#showcase8 h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    text-align: left;
+    padding-left: 410px;
+}
+
+#showcase8 img {
+    width: 350px;
+    border-radius: 50%;
+    margin-top: -250px;
+}
+
+#showcase8 p {
+    text-align: left;
+    font-family: tahoma;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 410px;
+}
+
+#showcase8 a {
+    float: left;
+    clear: left;
+    font-size: 25px;
+    padding-left: 410px;
+    margin-top: -100px;
+}
+
+#showcase9 {
+    background: darkblue;
+    margin-top: 30px;
+}
+
+#showcase9 h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#showcase9 p {
+    text-align: center;
+    font-family: tahoma;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+footer {
+    background-color: #35424a;
+}
+
+footer img {
+    width: auto;
+    padding: 5px;
+}
+
+footer h1 {
+    color: aliceblue;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.footerList {
+    font-family: tahoma;
+    line-height: 2.5;
+    color: aliceblue;
+}
+
+footer p {
+    color: aliceblue;
+    font-family: tahoma;
+}

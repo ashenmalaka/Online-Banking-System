@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<?php
+
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="login";
+$atmp=0;
+
+$conn=mysqli_connect($servername,$username,$password,$dbname);
+echo "connection";
+
+if(isset($_POST['login'])){
+    $user=$_POST['user'];
+    $pass=$_POST['pass'];
+    $atmp=$_POST['hidden'];
+if($atmp<4){
+    $query="SELECT * FROM user WHERE username='".$user."' and password='".$pass."'";
+    $result=mysqli_query($conn, $query);
+if($result){
+if(mysqli_num_rows($result)){
+    while (mysqli_fetch_array($result, MYSQLI_BOTH)) {
+    echo'<script type="text/javascript">alert("you are login successfully ")</script>';
+?>
+
+<script type="text/javascript">window.location.href="log in homepage.php";</script>
+<?php
+        }
+ 
+    }
+        else{
+            $atmp++;
+            echo '<script type="text/javascript">alert("try again and no of attempt is '.$atmp.'")</script>';
+            }   
+        }
+    }
+if($atmp==4){
+    echo '<script type="text/javascript">alert("login attempt exceed")</script>';
+    }
+}
+ 
+?>
+<html>
+<head>
+<title>Log in | S.L. Bank Online Banking</title>
+</head>
+<body>
+
+<div class="container">
+       <div class="header">
+       <h2>Log in if you are a user...</h2>
+       </div>
+       
+<form action="login_new.php" method="POST">
+    <table align="center">
+<?php
+echo "<input type='hidden' name='hidden' value='".$atmp."'>";
+?>
+    <tr>
+    <td>Username :</td>
+    <td><input type="text" <?php if($atmp==4) {?> disabled="disabled" <?php } ?> name="user" placeholder="Enter Username" /></td>
+    </tr>
+    <tr>
+    <td>Password :</td>
+    <td><input type="password" name="pass" placeholder="Enter Password"></td>
+    </tr>
+    <tr>
+    <td><input type="submit" <?php if($atmp==4) {?> disabled="disabled" <?php } ?> name="login" value="Login"></td>
+    </tr>
+    </table>
+
+<p>Not a user?<a href="registration_new.php">Enroll from here</a></p>
+
+</form>
+    </div>
+ 
+</body>
+</html>

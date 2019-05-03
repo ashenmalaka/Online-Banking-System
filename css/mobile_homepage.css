@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.0;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: #e8491d 5px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brand {
+    float: left;
+}
+
+header #brand h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+    padding-left: 5rem;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#newsletter {
+    background: url('../img/image123.jpg') no-repeat;
+    text-align: left;
+    border-bottom: #e8491d 5px solid;
+}
+
+#newsletter h2 {
+    font-size: 40px;
+    color: aliceblue;
+    padding-top: 15px;
+}
+
+#newsletter h1 {
+    font-size: 70px;
+    color: aliceblue;
+}
+
+#newsletter h4 {
+    font-size: 30px;
+    color: aliceblue;
+}
